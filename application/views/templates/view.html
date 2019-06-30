@@ -1,0 +1,20 @@
+
+
+
+<form    method="post" action="#" ng-submit="updatearticle()">
+  <fieldset>
+    <legend>Update Article</legend>
+    <div class="form-group">
+      <label >Title</label>
+      <input type="text" class="form-control" id="title"  placeholder="Enter Articles" autocomplete="off" required="" ng-model="form.title">
+    </div>
+    <div class="form-group">
+      <label >Description</label>
+      <input type="text" class="form-control" id="description"  placeholder="Enter Description" autocomplete="off" required="" ng-model="form.description">
+      <input type="hidden" name="articleid"  ng-model="form.articles_id" value="{{form.articles_id}}">
+    </div>
+    
+    <button type="submit" class="btn btn-primary"  id="update">Update</button>
+  </fieldset>
+</form>
+
